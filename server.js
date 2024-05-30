@@ -3,8 +3,8 @@ const cors = require('cors')
 const bodyParser = require('body-parser');
 const app = express()
 var corsOptions = { origin:'*'};
-const {db} = require("./app/models"); //sync database
-db.sequelize.sync();
+//const {db} = require("./app/models"); //sync database
+//db.sequelize.sync();
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
