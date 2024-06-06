@@ -9,6 +9,6 @@ const fs = require("fs");
 const moment = require("moment");
 const Op = db.Sequelize.Op;
 
-exports.getList = async (req,res) => {
+exports.getCustomerCategoryList = async (req,res) => {
     res.status(200).send({ status: "200", message: "ok" });
 }
