@@ -6,5 +6,5 @@ module.exports = function (app) {
       res.header("Access-Control-Allow-Headers","x-access-token, Origin, Content-Type, Accept");
       next();
     });
-    app.get("/api/setting/customerCategory\list",[authJwt.verifyToken],customerCategory.getCustomerCategoryList);
+    app.get("/api/setting/customerCategory/list",[authJwt.verifyToken],customerCategory.getCustomerCategoryList);
   };
